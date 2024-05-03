@@ -38,7 +38,7 @@ module.exports = () => {
         ]
       }),
       new InjectManifest({
-        swSrc: './src/switch.js',
+        swSrc: './src-sw.js',
         swDest: 'service-worker.js',
       }),
     ],
@@ -51,7 +51,7 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          exclude: /node_modules|bower_components)/,
+          exclude: /node_modules|bower_components/,
           use: {
             loader: 'babel-loader',
             options: {
