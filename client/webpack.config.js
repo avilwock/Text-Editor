@@ -21,11 +21,11 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'JATE',
-        favicon: './favicon.ico', // Add this line to include the favicon.ico file
+        favicon: './favicon.ico'
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+        swDest: 'service-worker.js',
       }),
       new WebpackPwaManifest({
         fingerprints: false,

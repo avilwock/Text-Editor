@@ -1,9 +1,0 @@
-{
-  "name": "Text Editor",
-  "short_name": "Editor",
-  "orientation": "portrait",
-  "display": "standalone",
-  "start_url": ".",
-  "description": "A PWA text editor",
-  "background_color": "#ffffff"
-}
