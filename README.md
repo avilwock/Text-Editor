@@ -78,6 +78,12 @@ To use this program, open the file, either locally, or online, and type the text
 
 ![alt text](client/src/images/JATE.png)
 
+![alt text](<client/src/images/JATE indexed.png>) 
+
+![alt text](<client/src/images/JATE Manifest.png>) 
+
+![alt text](<client/src/images/JATE service-worker.png>)
+
 ## Credits
 
 Logan Garland, Coding bootcamp, University of Irvine California
