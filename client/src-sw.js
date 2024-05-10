@@ -1,5 +1,8 @@
+//sets up a warmStrategyCache and leaves a placeholder for offlineFallback
 const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
+//creates a CacheFirst
 const { CacheFirst } = require('workbox-strategies');
+//sets a way to register a Route
 const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');

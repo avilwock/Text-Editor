@@ -1,7 +1,9 @@
 // Import methods to save and get data from the indexedDB database in './database.js'
 import { getDb, putDb } from './database';
+//imports the header method from the header.js file
 import { header } from './header';
 
+//this exports a class, and gets content out of local storage
 export default class {
   constructor() {
     const localData = localStorage.getItem('content');

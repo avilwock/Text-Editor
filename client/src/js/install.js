@@ -1,8 +1,9 @@
+//links a button install variable to the buttonInstall id in the html document
 const butInstall = document.getElementById('buttonInstall');
 
 // Logic for installing the PWA
-// TODO: Add an event handler to the `beforeinstallprompt` event
 
+//adds a button if the item hasn't been installed yet
 if ('beforeinstallprompt' in window) {
     window.addEventListener('beforeinstallprompt', (event) => {
 
@@ -11,7 +12,7 @@ if ('beforeinstallprompt' in window) {
         butInstall.classList.toggle('hidden', false);
     });
 
-    // TODO: Implement a click event handler on the `butInstall` element
+    // creates a click handler event for the installation
     butInstall.addEventListener('click', async () => {
 
         const promptEvent = window.deferredPrompt;
@@ -28,7 +29,7 @@ if ('beforeinstallprompt' in window) {
     });
 
 }
-// TODO: Add an handler for the `appinstalled` event
+//ensures the app will not try to reinstall if already installed
 window.addEventListener('appinstalled', (event) => {
 
     window.deferredPrompt = null;

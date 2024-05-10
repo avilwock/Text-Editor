@@ -1,4 +1,5 @@
 /* app shell CSS */
+/*sets the root element color scheme and height*/
 :root {
   --primary: #31a9e1;
   --gray: #ececec;
@@ -8,6 +9,7 @@
   --navbar-height: 50px;
 }
 
+/*gives a margin of 0 for the body, and uses the root color monoaki. It imports a font as well*/
 body {
   margin: 0;
   background-color: var(--monoaki);
@@ -15,11 +17,16 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-
+/*sets the h1 header to have a font size of 22pixels*/
 h1 {
   font-size: 22px;
 }
 
+/*gives the nav-bar a height of 50pixels, and a color of primary, as defined by the root
+The box has a one pixel shadow around it of rgba(0,0,0,0.1). It has a flex display
+and is aligned to the center with content justified as space-between. The font color
+is set to white, and font-size is 22 pixels. The font weight is 550, and the letter spacing
+is 0.9 pixels;*/
 #navbar {
   height: var(--navbar-height);
   background-color: var(--primary);
@@ -33,10 +40,14 @@ h1 {
   letter-spacing: 0.9px;
 }
 
+/*the icon image in the navbar is given a padding top of 10 pixels*/
 .navbar-brand img {
   padding-top: 10px;
 }
 
+/*The load screen has a short .75 second duration during load, which rotates
+it has a height and width of 30px. There is a border of 3pixels that is the
+primary color defined in the root*/
 .loading-spinner {
   animation-duration: 0.75s;
   animation-iteration-count: infinite;
@@ -49,6 +60,8 @@ h1 {
   border-radius: 50%;
 }
 
+/*This container displays the contents justified and aligned center, the height
+of the container is 100 view height, minus the height of the navbar*/
 .loading-container {
   display: flex;
   justify-content: center;
@@ -56,6 +69,8 @@ h1 {
   height: calc(100vh - var(--navbar-height));
 }
 
+/*defines the start and end points of the animation, starting at 0 and rotating
+360 degrees*/
 @keyframes rotate-forever {
   0% {
     transform: rotate(0deg);
@@ -66,20 +81,29 @@ h1 {
   }
 }
 
+/*Sets the app update to not display*/
 .app-update {
   display: none;
   position: absolute;
   right: 10px;
 }
 
+/*sets the update to show as a block display when active*/
 .app-update.show {
   display: block;
 }
 
+/*sets the nav bar butons to margin 25px*/
 .nav-btn {
   margin: 25px;
 }
 
+/*Sets the button to have text aligned to the center, and display inline
+the padding is 0.5 rem left and right, 1.2 height, a margin of 0.
+There are no text-decorations. Font size is set to 1rem, and border radius
+to 0.3 rems. border is set to 1px solid and transparent, there is no outline.
+The color is set to #1a1a1a, and the background-color is set to #aeaeae, there
+is a transition color set to ease in and out at .2s*/
 .btn {
   text-align: center;
   display: inline-block;
@@ -94,7 +118,7 @@ h1 {
   background-color: #aeaeae;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-
+/*below are all of the button stylings, and different effects.*/
 .btn:hover {
   background-color: #cecece;
   cursor: pointer;
@@ -192,6 +216,8 @@ h1 {
   background-color: #31a9e1;
 }
 
+/*sets up use on media devices, it prevents the nav-button from displaying,
+justifies content to the center, and gives a font size of 18px for h1*/
 @media only screen and (max-width: 600px) {
   .nav-btn {
     display: none;

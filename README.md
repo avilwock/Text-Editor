@@ -63,10 +63,20 @@ THEN I should have proper build scripts for a webpack application
 
 To access this repository, please visit: https://github.com/avilwock/Text-Editor
 
+To view online application please visit: https://text-editor-pou8.onrender.com/
+
 
 ## Installation
 
+To install the application from github, please clone the repository and run an npm install. Then type npm start to build the project, and have it open on local host.
+
+To install the application on your device, please visit the above online application link and press the install button in the top left corner.
+
 ## Usage
+
+To use this program, open the file, either locally, or online, and type the text you would like to add. Closing and opening it will keep your data present.
+
+![alt text](client/src/images/JATE.png)
 
 ## Credits
 
